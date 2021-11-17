@@ -5,7 +5,7 @@ image: images/ContractManagerMenu.PNG
 title: Contract Manager
 permalink: projects/contract_manager
 labels:
--Java
+- Java
 summary: As a part of my Java Programming module in year 1 i was required to make a program for a small communications company.
 ---
 

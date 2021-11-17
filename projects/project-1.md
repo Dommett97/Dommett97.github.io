@@ -16,7 +16,7 @@ summary: I created this application as a part of my Java Applications Developmen
 ### 1. Login Screen
 As per the requirements of the application it meant that a login screen was necessary to access the furniture catalog screen, the options allowed already existing users to use their unique user ID to login to the system, this obviously isn't the most secure method of logging in but due to time constraints with the assigment i felt this was the easiest way of demonstrating the login details being read to allow access.
 
-<img src = "images/LoginScreen.PNG"/>
+<img src = "Dommett97.github.io/images/LoginScreen.PNG"/>
 
 
 ### 2. Catalog Screen

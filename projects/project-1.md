@@ -22,12 +22,12 @@ As per the requirements of the application it meant that a login screen was nece
 ### 2. Catalog Screen
 The catalog screen is used to show all the items that the user has selected to buy, the screen is populated with buttons to add a desk, chair, or table. Each option will open a new gui screen and ask the user the how they would like their piece of furniture to be built, options such as type of wood, type of base, and size are avaliable as well as a few more that fit the companys stock.
 
-<img src = "images/EmptyCatalog.PNG"/>
+<img src = "https://Dommett97.github.io/images/EmptyCatalog.PNG"/>
 
 ### 3. Populated Catalog
 As said previously the catalog screen allows the user to see what they have added to their shopping basket, of course the current program doesn't have an option to checkout but if implemented for a real company then this option would be avaliable for the user. The following example shows off the entry of a new table order, once all the fields have been entered the new order details will be sent to the connected database this allows the company to keep track of all the orders that have been placed.
 
-<img src = "images/PopulatedCatalog.PNG"/>
+<img src = "https://Dommett97.github.io/images/PopulatedCatalog.PNG"/>
 
 ### 4. Customer Details Database
 With this project i was requied to make a link between a database and the program, the database consists of all new customer login details and this allows the returning user button to check the user ID of the user and allow them to succesfully login if the check is succesful. As well as customer details the database also allows all furniture orders to be recorded for the company to look at for reference in the future or just to see what orders need to be focused on.

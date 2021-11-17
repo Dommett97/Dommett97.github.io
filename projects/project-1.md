@@ -9,32 +9,31 @@ labels:
 summary: I created this application as a part of my Java Applications Development module for my first year of Computer science
 ---
 
-<div class="ui small rounded images">
-  <img class="ui image" src="../images/micromouse-robot.png">
-  <img class="ui image" src="../images/micromouse-robot-2.jpg">
-  <img class="ui image" src="../images/micromouse.jpg">
-  <img class="ui image" src="../images/micromouse-circuit.png">
-</div>
+## Furniture Catalog
 
-Micromouse is an event where small robot “mice” solve a 16 x 16 maze.  Events are held worldwide.  The maze is made up of a 16 by 16 gird of cells, each 180 mm square with walls 50 mm high.  The mice are completely autonomous robots that must find their way from a predetermined starting position to the central area of the maze unaided.  The mouse will need to keep track of where it is, discover walls as it explores, map out the maze and detect when it has reached the center.  having reached the center, the mouse will typically perform additional searches of the maze until it has found the most optimal route from the start to the center.  Once the most optimal route has been determined, the mouse will run that route in the shortest possible time.
+**Project description:** I created this application as a part of my Java Applications Development module for my first year of Computer science, the objective of this assigment was to design, implement and test a prototype application for the Real Office Furniture Company(ROFC). The application will allow staff members of the ROFC to record details of individual orders that have been succesffuly made within the company.
 
-For this project, I was the lead programmer who was responsible for programming the various capabilities of the mouse.  I started by programming the basics, such as sensor polling and motor actuation using interrupts.  From there, I then programmed the basic PD controls for the motors of the mouse.  The PD control the drive so that the mouse would stay centered while traversing the maze and keep the mouse driving straight.  I also programmed basic algorithms used to solve the maze such as a right wall hugger and a left wall hugger algorithm.  From there I worked on a flood-fill algorithm to help the mouse track where it is in the maze, and to map the route it takes.  We finished with the fastest mouse who finished the maze within our college.
+### 1. Login Screen
+As per the requirements of the application it meant that a login screen was necessary to access the furniture catalog screen, the options allowed already existing users to use their unique user ID to login to the system, this obviously isn't the most secure method of logging in but due to time constraints with the assigment i felt this was the easiest way of demonstrating the login details being read to allow access.
 
-Here is some code that illustrates how we read values from the line sensors:
+<img src = "images/LoginScreen.PNG"/>
 
-```js
-byte ADCRead(byte ch)
-{
-    word value;
-    ADC1SC1 = ch;
-    while (ADC1SC1_COCO != 1)
-    {   // wait until ADC conversion is completed   
-    }
-    return ADC1RL;  // lower 8-bit value out of 10-bit data from the ADC
-}
-```
 
-You can learn more at the [UH Micromouse Website](http://www-ee.eng.hawaii.edu/~mmouse/about.html).
+### 2. Catalog Screen
+The catalog screen is used to show all the items that the user has selected to buy, the screen is populated with buttons to add a desk, chair, or table. Each option will open a new gui screen and ask the user the how they would like their piece of furniture to be built, options such as type of wood, type of base, and size are avaliable as well as a few more that fit the companys stock.
+
+<img src = "images/EmptyCatalog.PNG"/>
+
+### 3. Populated Catalog
+As said previously the catalog screen allows the user to see what they have added to their shopping basket, of course the current program doesn't have an option to checkout but if implemented for a real company then this option would be avaliable for the user. The following example shows off the entry of a new table order, once all the fields have been entered the new order details will be sent to the connected database this allows the company to keep track of all the orders that have been placed.
+
+<img src = "images/PopulatedCatalog.PNG"/>
+
+### 4. Customer Details Database
+With this project i was requied to make a link between a database and the program, the database consists of all new customer login details and this allows the returning user button to check the user ID of the user and allow them to succesfully login if the check is succesful. As well as customer details the database also allows all furniture orders to be recorded for the company to look at for reference in the future or just to see what orders need to be focused on.
+
+
+
 
 
 

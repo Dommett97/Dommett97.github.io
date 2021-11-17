@@ -6,6 +6,7 @@ title: Furniture Catalog
 permalink: projects/furniture_catalog
 labels:
 - Java
+- SQLite 3
 summary: I created this application as a part of my Java Applications Development module for my first year of Computer science
 ---
 

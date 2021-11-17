@@ -1,16 +1,12 @@
 ---
 layout: project
 type: project
-image: images/micromouse.jpg
-title: Micromouse
-permalink: projects/micromouse
-# All dates must be YYYY-MM-DD format!
-date: 2015-07-01
+image: images/EmptyCatalog.PNG
+title: Furniture Catalog
+permalink: projects/furniture_catalog
 labels:
-  - Robotics
-  - Arduino
-  - C++
-summary: My team developed a robotic mouse that won first place in the 2015 UH Micromouse competition.
+- Java
+summary: I created this application as a part of my Java Applications Development module for my first year of Computer science
 ---
 
 <div class="ui small rounded images">

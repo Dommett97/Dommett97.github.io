@@ -30,12 +30,13 @@
         "NoSQL",
         "MongdoDB"
       ]
-    }
+    },
   "education": [
     {
       "University": "University of Teesside",
       "area": "Computer Science",
       "studyType": "BSc.",
       "startYear": "2018",
+    ]
     }
 }

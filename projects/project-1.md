@@ -10,8 +10,6 @@ labels:
 summary: I created this application as a part of my Java Applications Development module for my first year of Computer science
 ---
 
-## Furniture Catalog
-
 **Project description:** I created this application as a part of my Java Applications Development module for my first year of Computer science, the objective of this assigment was to design, implement and test a prototype application for the Real Office Furniture Company(ROFC). The application will allow staff members of the ROFC to record details of individual orders that have been succesffuly made within the company.
 
 ### 1. Login Screen

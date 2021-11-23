@@ -2,13 +2,10 @@
 layout: project
 type: project
 image: images/cotton-square.png
-title: Cotton
-permalink: projects/cotton
-# All dates must be YYYY-MM-DD format!
-date: 2014-04-12
+title: The Sun Temple
+permalink: projects/the_sun_temple
 labels:
-  - Lisp
-  - GitHub
+  - Python
 summary: A text adventure game I developed for ICS 313.
 ---
 

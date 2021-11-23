@@ -8,9 +8,6 @@ labels:
 - Java
 summary: As a part of my Java Programming module in year 1 i was required to make a program for a small communications company.
 ---
-
-## Contract Manager
-
 **Project description:** As a part of my Java Programming module in year 1 i was required to make a program for a small communications company that required a telephone contract manager to demonstrate key features, these key features were included in the packages that the company was providing to it's users. The program would ask the user multiple questions to tailor the contract to their needs, this would include things such as data package, data bundle, contract length etc.
 
 ### 1. Main Menu

@@ -18,7 +18,8 @@ Players alternate turns moving the expedition marker.  For each space traversed,
 ### 2. Game Setup
 The game begins by asking the players to enter in their names and once done the game board is displayed and one of the two players is chosen at random to start the game, the board is populated with a variety of different gems and also glass beads. The players are presented with  set of movement cards that they can choose between, there are up to 13 different cards to choose from and the correct validation has been implemented to only allow selection of the present cards.
 
-The following image represents the game board with a randomly generated array of gems and glass beads:<br>
+The following image represents the game board with a randomly generated array of gems and glass beads:
+<br>
 <img src = "https://Dommett97.github.io/images/GameBoard.jpg"/>
 
 The following image represents the movement cards and a validation check:

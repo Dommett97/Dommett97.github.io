@@ -6,53 +6,43 @@ title: The Sun Temple
 permalink: projects/the_sun_temple
 labels:
   - Python
-summary: A text adventure game I developed for ICS 313.
+summary: A text based board game I developed for my Introduction to Programming module.
 ---
 
-<img class="ui image" src="{{ site.baseurl }}/images/cotton-header.png">
+**Project description:** The Sun Temple is a competitive board game between two players.
+The temple is represented by a linear path of 40 spaces. A single marker representing the players’ expedition is placed on the first space of the board (the entrance to the Sun Temple). The remaining 39 spaces contain precious gems and glass beads. 
 
-Cotton is a horror-esque text-based adventure game I developed using the functions and macros built from The Wizard's Game in [Conrad Barski's Land of Lisp](http://landoflisp.com/). Slightly more interesting and convoluted! (It is not that scary.)
+### 1. Aim of the Game
+Players alternate turns moving the expedition marker.  For each space traversed, the active player collects the gem or glass bead on that space. After the expedition marker exits the Temple (i.e. moves past space 40), the game is over and players calculate their scores based on the gems and glass beads they have collected. The player with the most points is the winner.
 
-To give you a flavor of the game, here is an excerpt from one run:
+### 2. Game Setup
+The game begins by asking the players to enter in their names and once done the game board is displayed and one of the two players is chosen at random to start the game, the board is populated with a variety of different gems and also glass beads. The players are presented with  set of movement cards that they can choose between, there are up to 13 different cards to choose from and the correct validation has been implemented to only allow selection of the present cards.
 
-<hr>
+The following image represents the game board with a randomly generated array of gems and glass beads:
+<img src = "https://Dommett97.github.io/images/GameBoard.jpg"/>
 
-<pre>
-You open your eyes, and you are greeted by an unfamiliar ceiling.
-Startled, you get to your feet and quickly scan your surroundings. It's
-dark except for the stream of light coming from a crack on the only boarded
-window in the room. You try to peek through the crack, but you cannot see
-anything. You wonder where you are and who could have possibly brought you here.
+The following image represents the movement cards and a validation check:
+<img src = "https://Dommett97.github.io/images/MovementChits.jpg"/>
 
-<--------------------help------------------------>
-Enter quit or one of the following commands -
-Weld light look walk pickup inventory help h ?
-<------------------------------------------------>
+### 3. Playing the Game
+The active player chooses a movement chit from those available and advances the expedition marker by the chosen number. For each space traversed, including the final resting space, the active player collects the associated gem or glass bead. The movement chit is then discarded (and no longer available to the players).
 
-look
-The room is a picture of decay with only a faded number identifying it as room-4. The bed you were
- lying on is stained with what looks like dried blood. Could it be your blood? No - it is not. The
- only way out of the room aside from the door to the corridor is a window that is boarded shut. It
- looks like it has been like that for decades. There is a door going west from here. You see a candle
- on the floor. You see a match on the floor.
+<img src = "https://Dommett97.github.io/images/MovementMade.jpg"/>
 
-pickup candle
-- you are now carrying the candle -
+### 4. End of the Game
+Once the expedition marker exits the board, the game is over. 
+<br>
+<br>
+The player who did not exit the board with the marker receives a bonus gem or bead, determined at random, in addition to those already collected.
 
-pickup match
-- you are now carrying the match -
-
-light match candle
-
-The candle is now lit. It illuminates everything in the room.
-
-walk west
-The corridor is lit with the candle. It is so long that you cannot see to the end. You notice that
- there are words written on the wall. There is a door going east from here. There is a way going north
- from here. There is a door going south from here.
-</pre>
-
-<hr>
-
-Source: <a href="https://github.com/jogarces/ics-313-text-game"><i class="large github icon "></i>jogarces/ics-313-text-game</a>
-
+## Scoring
+When the game is finished, players calculate their scores as follows:<br> 
+<br>
+Firstly, count the number of gems each player has collected of each type. Players gain points for collections of gems as follows.
+<br>
+•	1 gem of one type = 1 point<br>
+•	2 gems of a type = 3 points [1 + 2]<br>
+•	3 gems of a type = 6 points [3 + 3]<br>
+•	4 gems of a type = 10 points [6 + 4]<br>
+•	etc.<br>
+<img src = "https://Dommett97.github.io/images/ScoreOutput.jpg"/>
